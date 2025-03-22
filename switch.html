@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>switch</title>
+    <style>
+        Body{
+            background-color: black;
+        }
+        div{
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+background-color: white;
+justify-content: center;
+padding: 10%;
+        }
+    </style>
+    
+</head>
+<body>
+    <div id="parent">
+        <button onclick="on()">switch ON</button>
+        <button onclick="off()">switch OFF</button>
+</div>
+    <script>
+        function on(){
+            document.getElementById("parent").style.backgroundColor="red"
+            document.getElementById("parent").style.boxShadow="0 0 300px red"
+            document.getElementById("parent").innerHTML="some one turned on me!!"
+        }
+        function off(){
+            document.getElementById("parent").style.backgroundColor="white"
+            document.getElementById("parent").style.boxShadow="none"
+        document.getElementById("parent").innerHTML="some one turned off me!!"
+        }
+    </script>
+</body>
+</html>
